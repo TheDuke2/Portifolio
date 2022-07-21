@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'contact.css' %}" />
+    <title>contact</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="/" target="_blank"> About</a></li>
+        <li><a href="/contact" target="_blank">Contact</a></li>
+        <li><a href="/registration" target="_blank">Register</a></li>
+        <li><a href="/login" target="_blank">Login</a></li>
+      </ul>
+    </nav>
+    <header class="head">
+      <h2>Contact Me</h2>
+    </header>
+    <main>
+      <div class="container">
+        <form action="">
+          <label for="fname">First Name:</label><br />
+          <input
+            type="text"
+            name="fname"
+            placeholder="Enter First Name..."
+            required
+            minlength="3"
+            maxlength="10"
+          /><br />
+          <label for="lname">Last Name:</label><br />
+          <input
+            type="text"
+            name="lname"
+            placeholder="Enter Last Name..."
+            required
+            minlength="3"
+            maxlength="10"
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="XYZ@zuri.com..."
+            required
+          /><br /><br />
+          <label for="">Message:</label><br />
+          <textarea name="moretext" id=""></textarea><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="contact-me">For more info you can contact me @</p>
+      <p class="contact-me">aladetomiwa31@gmail.com</p>
+      <div>
+        <ul>
+          <li class="socials">
+            <a href="https://twitter.com/Aladetomiwa2" target="_blank"
+              ><img src="{% static './image/twitter.png' %}" alt="twitter"
+            /></a>
+          </li>
+          <li class="socials">
+            <a href="#" target="_blank">
+              <img src="{% static './image/telegram.png' %}" alt="telegram"
+            /></a>
+          </li>
+          <li class="socials">
+            <a href="https://medium.com/@aladetomiwa31" target="_blank">
+              <img src="{% static './image/medium - Copy.png' %}" alt="medium"
+            /></a>
+          </li>
+          <li class="socials">
+            <a href="https://github.com/TheDuke2" target="_blank">
+              <img src="{% static './image/github - Copy.png' %}" alt="github"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p>Made by Alade Ayotomiwa &copy; 2022</p>
+    </footer>
+  </body>
+</html>
